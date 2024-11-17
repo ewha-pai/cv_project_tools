@@ -163,7 +163,7 @@ def pr_evaluation(thresholds, sample_names, load_gt_boundaries, load_pred, apply
         thinning to the predicted boundaries before evaluation
     :param progress: default=None a callable -- such as `tqdm` -- that
         accepts an iterator over the sample names in order to track progress
-    :return: `(sample_results, threshold_results, overall_result)`
+    :return: `(sample_results, threshold_results, best_result_single, best_result)`
     """
     if progress is None:
         progress = lambda x, *args: x
