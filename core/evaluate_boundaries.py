@@ -160,7 +160,7 @@ def pr_evaluation(thresholds, sample_names, load_gt_boundaries, load_pred, apply
         named sample; of the form `load_gt_boundaries(sample_name) -> gt`
         where `gt` is a 2D NumPy array
     :param apply_thinning: (default=True) if True, apply morphologial
-    thinning to the predicted boundaries before evaluation
+        thinning to the predicted boundaries before evaluation
     :param progress: default=None a callable -- such as `tqdm` -- that
         accepts an iterator over the sample names in order to track progress
     :return: `(sample_results, threshold_results, overall_result)`
